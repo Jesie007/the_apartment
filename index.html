@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Apartment</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navigation">
+        <div class="heading-primary-main">
+          <h1 class="heading-primary">Rental</h1>
+          <span class="heading-primary">from $99</span>
+          <span class="heading-primary-sub">per night</span>
+        </div>
+
+        <form action="#" class="form-group">
+          <div class="label-container">
+            <i class="ph ph-calendar-check form-icon"></i>
+            <label for="name" class="label">Check In</label>
+          </div>
+          <input type="text" class="input" id="name" placeholder="DD MM YYYY" />
+
+          <div class="label-container">
+            <i class="ph ph-calendar-blank form-icon"></i>
+            <label for="name" class="label">Check Out</label>
+          </div>
+          <input type="text" class="input" id="name" placeholder="DD MM YYYY" />
+
+          <div class="label-container">
+            <i class="ph ph-person form-icon"></i>
+            <label for="name" class="label">Adults</label>
+          </div>
+          <input type="number" class="input" id="name" placeholder="1" />
+
+          <div class="label-container">
+            <i class="ph ph-baby form-icon"></i>
+            <label for="name" class="label">Kids</label>
+          </div>
+          <input type="number" class="input" id="name" placeholder="0" />
+
+          <div class="btn-container">
+            <i class="ph ph-magnifying-glass btn-icon"></i>
+            <button class="btn">Search availability</button>
+          </div>
+        </form>
+
+        <div class="nav-info">
+          <ul class="nav-lists">
+            <div class="list-container">
+              <i class="ph ph-building-apartment form-icon"></i>
+              <li class="list">Apartment</li>
+            </div>
+            <div class="list-container">
+              <i class="ph ph-list form-icon"></i>
+              <li class="list">Subscribe</li>
+            </div>
+            <div class="list-container">
+              <i class="ph ph-address-book form-icon"></i>
+              <li class="list">contact</li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="header w3-container" id="apartment">
+        <h2 class="w3-text-green">The Apartment</h2>
+        <div class="gallery">
+          <figure class="main-display">
+            <img
+              src="./images/livingroom.jpeg"
+              alt="main display"
+              id="main-img"
+              class="main-img"
+            />
+            <figurecaption class="main-text">Main Display</figurecaption>
+          </figure>
+
+          <figure
+            class="gallery-list"
+            onclick="changeMainImage('./images/livingroom.jpeg', 'Living Room')"
+          >
+            <img
+              src="./images/livingroom.jpeg"
+              alt="living room"
+              class="gallery-img"
+            />
+            <figurecaption class="gallery-text">Living Room</figurecaption>
+          </figure>
+
+          <figure
+            class="gallery-list"
+            onclick="changeMainImage('./images/diningroom.jpeg', 'Dining Room')"
+          >
+            <img
+              src="./images/diningroom.jpeg"
+              alt="living room"
+              class="gallery-img"
+            />
+            <figurecaption class="gallery-text">Dinning Room</figurecaption>
+          </figure>
+
+          <figure
+            class="gallery-list"
+            onclick="changeMainImage('./images/bedroom.jpeg', 'Bedroom')"
+          >
+            <img
+              src="./images/bedroom.jpeg"
+              alt="living room"
+              class="gallery-img"
+            />
+            <figurecaption class="gallery-text">Bedroom</figurecaption>
+          </figure>
+
+          <figure
+            class="gallery-list"
+            onclick="changeMainImage('./images/livingroom2.jpeg', 'Living Room 2')"
+          >
+            <img
+              src="./images/livingroom2.jpeg"
+              alt="living room"
+              class="gallery-img"
+            />
+            <figurecaption class="gallery-text">Living Room 2</figurecaption>
+          </figure>
+        </div>
+     
+
+      <section class="space">
+        <h3 class="heading-secondary">The space</h3>
+        <div class="flex-container">
+          <div class="flex-icon">
+            <i class="ph ph-person"></i>
+            <h3 class="flex-item">Max people: 4</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-clock icon"></i>
+            <h3 class="flex-item">Check In: After 3PM</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-bathtub icon"></i>
+            <h3 class="flex-item">Bathrooms: 2</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-clock icon"></i>
+            <h3 class="flex-item">Check out: 12PM</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-bed icon"></i>
+            <h3 class="flex-item">Bedrooms: 1</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="amenities">
+        <h3 class="heading-secondary">Amenities</h3>
+        <div class="flex-container">
+          <div class="flex-icon">
+            <i class="ph ph-shower"></i>
+            <h3 class="flex-item">Shower</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-fork-knife"></i>
+            <h3 class="flex-item">Kitchen</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-wifi-high"></i>
+            <h3 class="flex-item">WIFI</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-thermometer-hot"></i>
+            <h3 class="flex-item">Heating</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-television-simple"></i>
+            <h3 class="flex-item">TV</h3>
+          </div>
+
+          <div class="flex-icon">
+            <i class="ph ph-wheelchair"></i>
+            <h3 class="flex-item">Accessible</h3>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="extra">
+        <h3 class="heading-secondary">Extra Info</h3>
+        <p class="heading-secondary-sub">Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        </p>
+        <div class="accept">
+          <p class="extra-sub">We accept:</p>
+          <span class="cards"><i class="ph ph-paypal-logo card-icon"></i></span>
+          <span class="cards"><i class="ph ph-money card-icon"></i></span>
+          <span class="cards"><i class="ph ph-credit-card card-icon"></i></span>
+          <span class="cards"><i class="ph ph-contactless-payment card-icon"></i></span>
+        </div>
+      </section>
+
+      <section class="rules">
+        <h3 class="heading-secondary">Rules</h3>
+        <p class="heading-secondary-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="heading-secondary-sub">Subscribe to receive updates on available dates and special offers.</p>
+        <button class="btn btn-sub">Subscribe</button>
+      </section>
+
+      <section class="contact">
+        <h2 class="heading-primary">Contact</h2>
+
+        <div class="contact-container">
+          <i class="ph ph-map-pin contact-icon"></i>
+          <span class="contact-detail">Chicago, US</span>
+        </div>
+        <div class="contact-container">
+          <i class="ph ph-phone contact-icon"></i>
+          <span class="contact-detail">Phone: +00 151515</span>
+        </div>
+        <div class="contact-container">
+          <i class="ph ph-envelope contact-icon"></i>
+          <span class="contact-detail">Email: mail.@mail.com</span>
+        </div>
+
+        
+        <p class="que">Questions? Go ahead, ask them:</p>
+        <form action="#" class="question-form">
+          <input type="text" class="input-question" placeholder="Name">
+          <input type="text" class="input-question" placeholder="Email">
+          <input type="text" class="input-question" placeholder="Message">
+          <button class="btn btn-sub">Subscribe</button>
+        </form>
+      </section>
+
+    </div>
+  </header>
+
+    <script>
+      function changeMainImage(src, alt) {
+        const mainImg = document.getElementById("main-img");
+        mainImg.src = src;
+        mainImg.alt = alt;
+
+        const mainText = mainImg.nextElementSibling;
+        mainText.textContent = alt;
+      }
+    </script>
+  </body>
+</html>

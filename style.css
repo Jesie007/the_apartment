@@ -1,0 +1,316 @@
+:root {
+  --color-primary: #fff;
+  --color-grey: #f1f1f1;
+  --color-dark: #000;
+  --color-green: #4caf50;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  background-color: var(--color-primary);
+  display: flex;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.navigation {
+  flex: 1;
+  background-color: var(--color-grey);
+  padding: 1.6rem 1.6rem;
+  margin-left: 1px solid var(--color-grey);
+
+  /* position: fixed;
+  overflow: hidden;
+  height: 100%;
+  display: block;
+  z-index: 3; */
+
+  border-left: 1px solid #dee2e6;
+}
+
+.header {
+  flex-grow: 1;
+
+  padding: 0.01rem 1.6rem;
+  margin: 0 auto;
+  border-right: 1px solid #dee2e6;
+
+  /* overflow: auto; */
+}
+
+.heading-primary-main {
+  margin: 1rem 0;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1.8rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+  margin-bottom: 4.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-icon {
+  font-size: 2rem;
+}
+
+.label-container {
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.label {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.input {
+  font-size: 1.8rem;
+  font-family: inherit;
+}
+
+.input::placeholder {
+  font-size: 1.6rem;
+  padding-left: 0.8rem;
+  font-family: inherit;
+  font-weight: 300;
+}
+
+.btn-container {
+  margin-top: 1.6rem;
+  margin-bottom: 4.4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btn-icon {
+  font-size: 1.6rem;
+  font-weight: fill;
+  position: absolute;
+  top: 1.8rem;
+  left: 1.6rem;
+  margin-right: auto;
+  color: #fff;
+}
+.btn {
+  padding: 1.6rem 0;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: var(--color-green);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #777;
+  color: #000;
+}
+
+.nav-lists {
+  font-size: 1.6rem;
+  list-style: none;
+}
+.list-container {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.form-icon {
+  margin-right: 0.2rem;
+}
+
+.list {
+  margin-bottom: 2rem;
+}
+
+.w3-text-green {
+  color: var(--color-green);
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: auto;
+}
+
+.main-display {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.gallery-list {
+  width: 24%;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+}
+
+.main-text,
+.gallery-text {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.5rem;
+  padding: 1rem 1rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.space {
+  margin-top: 3.6rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.8rem;
+}
+
+.heading-secondary {
+  font-weight: 400;
+  margin-bottom: 2.2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+
+.flex-icon {
+  display: flex;
+  flex: 0 0 50%;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.flex-item {
+  margin: 2rem 0;
+  font-weight: 300;
+  margin-left: 0.8rem;
+}
+
+.amenities {
+  margin-top: 3.6rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.8rem;
+}
+
+.extra {
+  margin-top: 3.6rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.8rem;
+}
+
+.heading-secondary-sub {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.accept {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+}
+
+.card-icon {
+  font-size: 1.6rem;
+  font-weight: fill;
+  color: #000;
+}
+
+.rules {
+  margin-top: 3.6rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 1.8rem;
+}
+
+.btn-sub {
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  margin-top: 3.6rem;
+  margin-bottom: 4rem;
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+}
+.contact-detail {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.que {
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.input-question {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  width: 80%;
+  height: 3rem;
+}
+
+.input-question::placeholder {
+  margin-left: 2rem;
+  font-weight: 300;
+}
